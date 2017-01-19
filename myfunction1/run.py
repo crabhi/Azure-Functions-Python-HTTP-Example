@@ -14,6 +14,9 @@ from AzureHTTPHelper import HTTPHelper
 # This is a little class used to abstract away some basic HTTP functionality
 http = HTTPHelper()
 
+print "--- ENV ---"
+print os.environ
+
 # All these print statements get sent to the Azure Functions live log
 print "--- GET ---"
 print http.get
